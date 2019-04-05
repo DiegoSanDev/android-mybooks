@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#40ef6c00"
+    android:orientation="vertical"
+    tools:context=".activity.UsuarioCadastroActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_alignParentTop="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/user"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginVertical="@dimen/margin_vertical"
+            android:layout_marginHorizontal="@dimen/margin_horizontal"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_default"
+                android:text="@string/text_login"/>
+
+            <EditText
+                android:id="@+id/edit_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_default"
+                android:background="@drawable/edit_text_bg"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_default"
+                android:text="@string/text_senha"/>
+
+            <EditText
+                android:id="@+id/edit_senha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_default"
+                android:background="@drawable/edit_text_bg"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_default"
+                android:text="@string/text_confirmar_senha"/>
+
+            <EditText
+                android:id="@+id/edit_senha_confirma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_default"
+                android:background="@drawable/edit_text_bg"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_inscrevase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_default"
+            android:text="Inscreva-se"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
